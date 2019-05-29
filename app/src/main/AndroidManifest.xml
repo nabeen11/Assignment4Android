@@ -12,8 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".DashboardActivity"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.mains.ItemAddActivity"></activity>
+        <activity android:name=".ui.mains.ItemsDetailsActivity" />
+        <activity android:name=".ui.mains.RegisterActivity" />
+        <activity android:name=".ui.mains.DashboardActivity" />
+        <activity android:name=".ui.mains.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

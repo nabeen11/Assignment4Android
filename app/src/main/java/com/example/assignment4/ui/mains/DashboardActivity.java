@@ -1,4 +1,4 @@
-package com.example.assignment4;
+package com.example.assignment4.ui.mains;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,9 +6,12 @@ import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.assignment4.R;
+import com.example.assignment4.User_Interface;
+import com.example.assignment4.models.Items;
+
 import java.util.List;
 
-import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -39,7 +42,7 @@ public class DashboardActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<List<Items>> call, Response<List<Items>> response) {
                 List<Items> items = response.body();
-                for(Items item:items){
+d                for(Items item:items){
                     String data= "";
                     data += item.getItemName()+ "\n";
                     data +=item.getItemPrice()+ "\n";

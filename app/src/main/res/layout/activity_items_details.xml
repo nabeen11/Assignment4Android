@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ass2"
+    tools:context=".ui.mains.ItemsDetailsActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/detailImgView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_account_box_black_24dp" />
+
+    <TextView
+        android:id="@+id/lblname"
+        style="@style/TextandLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detailImgView"
+        android:layout_marginTop="27dp"
+        android:layout_marginLeft="50dp"
+        android:text="Item name" />
+
+
+    <TextView
+        android:id="@+id/detailName"
+        style="@style/TextandLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailImgView"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="27dp"
+        android:hint="Item " />
+
+    <TextView
+        android:id="@+id/lblprice"
+        style="@style/TextandLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblname"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="27dp"
+        android:text="Description" />
+
+    <TextView
+        android:id="@+id/detailPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detailName"
+        style="@style/TextandLayout"
+        android:layout_marginStart="-72dp"
+        android:layout_marginTop="26dp"
+        android:layout_toEndOf="@+id/detailImgView"
+        android:hint="Item Price"
+        android:layout_marginLeft="-72dp"
+        android:layout_toRightOf="@+id/detailImgView" />
+
+
+    <TextView
+        android:id="@+id/lbldesc"
+        style="@style/TextandLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="27dp"
+        android:layout_below="@id/detailPrice"
+        android:text="Price" />
+
+    <TextView
+        style="@style/TextandLayout"
+        android:id="@+id/detailDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailPrice"
+        android:layout_marginStart="-71dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@+id/detailImgView"
+        android:hint="Item Description"
+        android:layout_toRightOf="@+id/detailImgView" />
+
+
+
+</RelativeLayout>

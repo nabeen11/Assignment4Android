@@ -1,4 +1,4 @@
-package com.example.assignment4;
+package com.example.assignment4.models;
 
 public class Items {
 
@@ -6,6 +6,11 @@ public class Items {
     private  String itemPrice;
     private  String itemImageName;
     private  String itemDescription;
+    private  int imgid;
+
+    public int getImgid() {
+        return imgid;
+    }
 
     public String getItemName() {
         return itemName;
@@ -39,10 +44,11 @@ public class Items {
         this.itemDescription = itemDescription;
     }
 
-    public Items(String itemName, String itemPrice, String itemImageName, String itemDescription) {
+    public Items(String itemName, int imgid, String itemPrice, String itemImageName, String itemDescription) {
         this.itemName = itemName;
         this.itemPrice = itemPrice;
         this.itemImageName = itemImageName;
         this.itemDescription = itemDescription;
+        this.imgid = imgid;
     }
 }

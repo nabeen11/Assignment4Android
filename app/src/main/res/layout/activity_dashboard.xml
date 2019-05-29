@@ -4,11 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DashboardActivity">
+    tools:context=".ui.mains.DashboardActivity">
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/tv"-->
+        <!--android:background="#87cefa"/>-->
 
     <TextView
-        android:id="@+id/tv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="hello"/>
+        android:layout_height="match_parent"
+        android:id="@+id/tv"
+        android:hint="Hello"
+        />
+
+
 </LinearLayout>

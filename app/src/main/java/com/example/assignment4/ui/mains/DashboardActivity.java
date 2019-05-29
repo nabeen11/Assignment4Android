@@ -42,7 +42,7 @@ public class DashboardActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<List<Items>> call, Response<List<Items>> response) {
                 List<Items> items = response.body();
-d                for(Items item:items){
+                for(Items item:items){
                     String data= "";
                     data += item.getItemName()+ "\n";
                     data +=item.getItemPrice()+ "\n";

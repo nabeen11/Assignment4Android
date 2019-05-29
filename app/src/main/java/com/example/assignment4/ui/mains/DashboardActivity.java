@@ -55,7 +55,6 @@ public class DashboardActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<List<Items>> call, Throwable t) {
                 Toast.makeText(DashboardActivity.this, t.getMessage(), Toast.LENGTH_SHORT).show();
-
             }
         });
     }

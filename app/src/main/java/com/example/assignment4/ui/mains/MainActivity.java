@@ -58,9 +58,7 @@ public class MainActivity extends AppCompatActivity {
                         else{
                             Toast.makeText(MainActivity.this, "Incorrect", Toast.LENGTH_SHORT).show();
                         }
-
                     }
-
                     @Override
                     public void onFailure(Call<ResponseBody> call, Throwable t) {
                         Toast.makeText(MainActivity.this, t.getMessage(), Toast.LENGTH_SHORT).show();
